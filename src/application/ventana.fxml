@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E64FE;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="logoLabel" alignment="CENTER" layoutX="336.0" layoutY="50.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 45;" text="C" textAlignment="CENTER" textFill="#2e64fe">
+         <font>
+            <Font name="Verdana" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="321.0" layoutY="166.0" text="APP NAME" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="helloLabel" layoutX="305.0" layoutY="218.0" prefHeight="64.0" prefWidth="152.0" text="HELLO THERE, WELCOME TO MY APP!!" textAlignment="CENTER" textFill="WHITE" visible="false" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Pane fx:id="spinnerPane" layoutX="269.0" layoutY="306.0" prefHeight="158.0" prefWidth="224.0" visible="false">
+         <children>
+            <JFXSpinner layoutX="87.0" layoutY="29.0" radius="30.0" />
+            <Label layoutX="44.0" layoutY="115.0" text="Wait a few seconds please." textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
